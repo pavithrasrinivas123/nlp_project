@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} NLP Project {% endblock %}
+
+{% block css %}
+<style>
+    #card {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron {
+        background-image: url('{% static "images/nlp.jpeg" %}');
+        background-size: cover;
+        height: 100%;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4 text-white font-weight-bold">Natural Language Processing (NLP)</h1>
+        <p class="lead text-white">Micro Project for ABL</p>
+    </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Sentiment Analysis -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{% static 'images/sentiment_analysis.jpg' %}" alt="Sentiment">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Sentiment analysis uses NLP and ML to understand emotions, opinions, and subjective information from text.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="/sentiment/" class="btn btn-primary btn-sm">Sentiment Analysis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spam Classification -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{% static 'images/spam.jpg' %}" alt="Spam">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Spam classification differentiates unwanted spam messages from genuine "ham" messages using NLP techniques.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="/spam/" class="btn btn-primary btn-sm">Spam Classification</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Summarization -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{% static 'images/textsummarization.webp' %}" alt="Summarization">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Text summarization condenses long text into a shorter version while retaining key information.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="/summarize/" class="btn btn-primary btn-sm">Summarizer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Parser -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{% static 'images/Resume_Parsing.jpg' %}" alt="Resume Parsing">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Resume parsing automatically extracts structured information from resumes using NLP and ML techniques.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="/resumeparser/" class="btn btn-primary btn-sm">Resume Parser</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}{% endblock %}
