@@ -7,7 +7,6 @@ In this ***machine learning*** and ***NLP*** project, this repository consist of
 * Resume Skills Parser
 
 
-![Image](https://github.com/shubhamjain31/NLP_Project/blob/master/Screenshots/image.jpg)  
 
 
 # Technologies used in this project,
